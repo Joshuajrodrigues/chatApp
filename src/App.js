@@ -95,10 +95,15 @@ function ChatMessage(props) {
   const messageClass = uid === auth.currentUser.uid ? "sent" : "received";
   return (
     <div className={`message${messageClass}`}>
+      {
+        // eslint-disable-next-line
+      }
       <img
+        // eslint-disable-next-line
         src={
           photoURL || "https://api.adorable.io/avatars/23/abott@adorable.png"
         }
+        alt="user pic"
       />
       <p>{text}</p>
     </div>
